@@ -1,0 +1,107 @@
+/* Coupons row container */
+.coupons-row {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    gap: 20px; /* Adds consistent spacing between coupons */
+    padding: 20px;
+  }
+  
+  /* Coupon styles for 5 coupons in the 1st row */
+  .coupons-row:first-of-type .coupon {
+    flex: 1 1 calc(20% - 20px); /* 5 coupons, each taking up 20% minus gap */
+    max-width: calc(20% - 20px);
+  }
+  
+  /* Coupon styles for 2 coupons in the 2nd row */
+  .coupons-row:last-of-type .coupon {
+    flex: 1 1 calc(50% - 20px); /* 2 coupons, each taking up 50% minus gap */
+    max-width: calc(50% - 20px);
+  }
+  
+  /* Coupon base styles */
+  .coupon {
+    border: 2px dashed #c44482;
+    border-radius: 10px;
+    background: #fffbe6;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Coupon header */
+  .coupon-header {
+    background: #c44482;
+    color: white;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .coupon-header h2 {
+    margin: 0;
+    font-size: 22px;
+  }
+  
+  .coupon-header p {
+    margin: 5px 0 0;
+    font-size: 14px;
+  }
+  
+  /* Coupon code */
+  .coupon-code {
+    padding: 15px;
+  }
+  
+  .coupon-code p {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .coupon-code h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #c44482;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  /* Coupon footer */
+  .coupon-footer {
+    padding: 10px;
+    background: #f7f7f7;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .coupon-footer p {
+    margin: 5px 0;
+    font-size: 12px;
+    color: #666;
+  }
+  
+  /* Apply button */
+  .apply-btn {
+    display: inline-block;
+    background-color: #c44482;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .apply-btn:hover {
+    background-color: #c44482;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .coupon {
+      flex: 1 1 calc(50% - 20px); /* Two coupons per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .coupon {
+      flex: 1 1 100%; /* One coupon per row on small screens */
+    }
+  }

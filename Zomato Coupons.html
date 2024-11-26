@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra Coupons & Discounts</title>
+
+   <style>
+    /* Coupons row container */
+.coupons-row {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  justify-content: space-between; /* Adds spacing between coupons */
+  gap: 20px; /* Adds consistent spacing between coupons */
+  padding: 20px;
+}
+
+/* Coupon styles */
+.coupon {
+  flex: 1 1 calc(20% - 20px); /* Makes each coupon take up 20% of the row, minus gaps */
+  max-width: calc(20% - 20px);
+  border: 2px dashed #f41212;
+  border-radius: 10px;
+  background: #fffbe6;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.coupon-header {
+  background:  #f41212;
+  color: white;
+  padding: 15px;
+  border-radius: 10px 10px 0 0;
+}
+
+.coupon-header h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.coupon-header p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+.coupon-code {
+  padding: 15px;
+}
+
+.coupon-code p {
+  margin: 0;
+  font-size: 12px;
+  color: #666;
+}
+
+.coupon-code h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color:  #f41212;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.coupon-footer {
+  padding: 10px;
+  background: #f7f7f7;
+  border-radius: 0 0 10px 10px;
+}
+
+.coupon-footer p {
+  margin: 5px 0;
+  font-size: 12px;
+  color: #666;
+}
+
+.apply-btn {
+  display: inline-block;
+  background-color:  #f41212;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.apply-btn:hover {
+  background-color:  #f41212;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .coupon {
+    flex: 1 1 calc(50% - 20px); /* Two coupons per row on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .coupon {
+    flex: 1 1 100%; /* One coupon per row on small screens */
+  }
+}
+   </style>
+
+</head>
+<body>
+
+<!--1st Row-->
+<div class="coupons-row">
+  <div class="coupon">
+    <div class="coupon-header">
+      <h2>60% Off for New Users</h2>
+      <p>On first order</p>
+    </div>
+    <div class="coupon-code">
+      <p>Use Code:</p>
+      <h3>GET50</h3>
+    </div>
+    <div class="coupon-footer">
+      <p>Valid until: <strong>Continuous for first orders</strong></p>
+      <a href="https://www.zomato.com/" class="apply-btn" target="_blank">Apply Coupon</a>
+    </div>
+  </div>
+
+
+  <div class="coupon">
+    <div class="coupon-header">
+      <h2>40% Discount</h2>
+      <p>Get a flat 40% discount on orders.</p>
+    </div>
+    <div class="coupon-code">
+      <p>Use Code:</p>
+      <h3>ZOMATO</h3>
+    </div>
+    <div class="coupon-footer">
+      <p>Valid until: <strong> Valid throughout November 2024</strong></p>
+      <a href="https://www.zomato.com/" class="apply-btn" target="_blank">Apply Coupon</a>
+    </div>
+  </div>
+
+  <div class="coupon">
+    <div class="coupon-header">
+      <h2>Flat ₹100 Off with Kotak Credit Cards</h2>
+      <p>Min order ₹499.</p>
+    </div>
+    <div class="coupon-code">
+      <p>Use Code:</p>
+      <h3>KWEEKENDCC</h3>
+    </div>
+    <div class="coupon-footer">
+      <p>Valid until: <strong>Weekly usage allowed</strong></p>
+      <a href="https://www.zomato.com/" class="apply-btn" target="_blank">Apply Coupon</a>
+    </div>
+  </div>
+
+
+  <div class="coupon">
+    <div class="coupon-header">
+      <h2>20% Off with Bank of Baroda Debit Cards</h2>
+      <p>Min order ₹399.</p>
+    </div>
+    <div class="coupon-code">
+      <p>Use Code:</p>
+      <h3>BOBJOY</h3>
+    </div>
+    <div class="coupon-footer">
+      <p>Valid until: <strong>30th Nov 2024</strong></p>
+      <a href="https://www.zomato.com/" class="apply-btn" target="_blank">Apply Coupon</a>
+    </div>
+  </div>
+
+<div class="coupon">
+  <div class="coupon-header">
+    <h2>15% Off with Yes Bank Cards</h2>
+    <p> Min order ₹500.</p>
+  </div>
+  <div class="coupon-code">
+    <p>Use Code:</p>
+    <h3>ZAU200</h3>
+  </div>
+  <div class="coupon-footer">
+    <p>Valid until: <strong> Valid for December</strong></p>
+    <a href="https://www.zomato.com/" class="apply-btn" target="_blank">Apply Coupon</a>
+  </div>
+</div>
+</div>
+
+<!--2nd Row-->
+<div class="coupons-row">
+  <div class="coupon">
+    <div class="coupon-header">
+      <h2>30% Discount on Onecard Transactions</h2>
+      <p>Save 30% on selected restaurants.</p>
+    </div>
+    <div class="coupon-code">
+      <p>Use Code:</p>
+      <h3>RDEATS</h3>
+    </div>
+    <div class="coupon-footer">
+      <p>Valid until: <strong>Weekly for DecembeR</strong></p>
+      <a href="https://www.zomato.com/" class="apply-btn" target="_blank">Apply Coupon</a>
+    </div>
+  </div>
+
+  <div class="coupon">
+    <div class="coupon-header">
+      <h2>10% Off on HDFC Bank Debit Cards</h2>
+      <p>Max discount ₹125</p>
+    </div>
+    <div class="coupon-code">
+      <p>Use Code:</p>
+      <h3>DFC150</h3>
+    </div>
+    <div class="coupon-footer">
+      <p>Valid until: <strong>31st Dec 2024</strong></p>
+      <a href="https://www.zomato.com/" class="apply-btn" target="_blank">Apply Coupon</a>
+    </div>
+  </div>
+
+  <div class="coupon">
+    <div class="coupon-header">
+      <h2>Flat ₹150 Off on AU Bank Cards</h2>
+      <p>min order ₹500.</p>
+    </div>
+    <div class="coupon-code">
+      <p>Use Code:</p>
+      <h3> ZAU200</h3>
+    </div>
+    <div class="coupon-footer">
+      <p>Valid until: <strong>31st Dec 2024</strong></p>
+      <a href="https://www.zomato.com/" class="apply-btn" target="_blank">Apply Coupon</a>
+    </div>
+  </div>
+
+
+  <div class="coupon">
+    <div class="coupon-header">
+      <h2>₹75 cashback</h2>
+      <p>On payments via Paytm UPI.!</p>
+    </div>
+    <div class="coupon-code">
+      <p>Use Code:</p>
+      <h3>TMBASH</h3>
+    </div>
+    <div class="coupon-footer">
+      <p>Valid until: <strong>31st Dec 2024</strong></p>
+      <a href="https://www.zomato.com/" class="apply-btn" target="_blank">Apply Coupon</a>
+    </div>
+  </div>
+
+  <div class="coupon">
+    <div class="coupon-header">
+      <h2>₹150 cashback</h2>
+      <p>Using Mobikwik Wallet</p>
+    </div>
+    <div class="coupon-code">
+      <p>Use Code:</p>
+      <h3>KBINGE</h3>
+    </div>
+    <div class="coupon-footer">
+      <p>Valid until: <strong>31st Dec 2024</strong></p>
+      <a href="https://www.zomato.com/" class="apply-btn" target="_blank">Apply Coupon</a>
+    </div>
+  </div> 
+</div>
+
+
+</body>
+</html>

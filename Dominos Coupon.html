@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominos Coupons & Discounts</title>
+
+    <style> 
+    /* Coupons row container */
+.coupons-row {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    justify-content: space-between; /* Adds spacing between coupons */
+    gap: 20px; /* Adds consistent spacing between coupons */
+    padding: 20px;
+  }
+  
+  /* Coupon styles */
+  .coupon {
+    flex: 1 1 calc(20% - 20px); /* Makes each coupon take up 20% of the row, minus gaps */
+    max-width: calc(20% - 20px);
+    border: 2px dashed #3c70e0;
+    border-radius: 10px;
+    background: #fffbe6;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .coupon-header {
+    background: #3c70e0;
+    color: white;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .coupon-header h2 {
+    margin: 0;
+    font-size: 22px;
+  }
+  
+  .coupon-header p {
+    margin: 5px 0 0;
+    font-size: 14px;
+  }
+  
+  .coupon-code {
+    padding: 15px;
+  }
+  
+  .coupon-code p {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .coupon-code h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #3c70e0;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .coupon-footer {
+    padding: 10px;
+    background: #f7f7f7;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .coupon-footer p {
+    margin: 5px 0;
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .apply-btn {
+    display: inline-block;
+    background-color: #3c70e0;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  .apply-btn:hover {
+    background-color: #3c70e0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .coupon {
+      flex: 1 1 calc(50% - 20px); /* Two coupons per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .coupon {
+      flex: 1 1 100%; /* One coupon per row on small screens */
+    }
+  }
+    </style>
+
+
+</head>
+<body>
+
+<!--1st Row-->
+<div class="coupons-row">
+  <div class="coupon">
+    <div class="coupon-header">
+      <h2>20% Off on ₹2500+ Orders</h2>
+      <p>On orders worth ₹2500 and above.</p>
+    </div>
+    <div class="coupon-code">
+      <p>Use Code:</p>
+      <h3> PARTY20</h3>
+    </div>
+    <div class="coupon-footer">
+      <p>Valid until: <strong> Dec 2024</strong></p>
+      <a href="https://www.dominos.com/" class="apply-btn" target="_blank">Apply Coupon</a>
+    </div>
+  </div>
+
+
+  <div class="coupon">
+    <div class="coupon-header">
+      <h2>₹100 Off on Orders (New Users)</h2>
+      <p>On your first order of ₹500 or more.</p>
+    </div>
+    <div class="coupon-code">
+      <p>Use Code:</p>
+      <h3>NEW100</h3>
+    </div>
+    <div class="coupon-footer">
+      <p>Valid until: <strong>Ongoing</strong></p>
+      <a href="https://www.dominos.com/" class="apply-btn" target="_blank">Apply Coupon</a>
+    </div>
+  </div>
+
+  <div class="coupon">
+    <div class="coupon-header">
+      <h2>2 Regular Pizzas at ₹99 Each</h2>
+      <p>under the Pizza Mania offer.</p>
+    </div>
+    <div class="coupon-code">
+      <p>Use Code:</p>
+      <h3> Not specified</h3>
+    </div>
+    <div class="coupon-footer">
+      <p>Valid until: <strong>Ongoing</strong></p>
+      <a href="https://www.dominos.com/" class="apply-btn" target="_blank">Apply Coupon</a>
+    </div>
+  </div>
+
+
+  <div class="coupon">
+    <div class="coupon-header">
+      <h2>Flat 40% Off on Orders Above ₹200</h2>
+      <p>On on pizza orders above ₹200.</p>
+    </div>
+    <div class="coupon-code">
+      <p>Use Code:</p>
+      <h3>GET40</h3>
+    </div>
+    <div class="coupon-footer">
+      <p>Valid until: <strong>Dec 2024</strong></p>
+      <a href="https://www.dominos.com/" class="apply-btn" target="_blank">Apply Coupon</a>
+    </div>
+  </div>
+
+<div class="coupon">
+  <div class="coupon-header">
+    <h2>Free Garlic Bread</h2>
+    <p>On on orders above ₹350.</p>
+  </div>
+  <div class="coupon-code">
+    <p>Use Code:</p>
+    <h3>FREEBREAD</h3>
+  </div>
+  <div class="coupon-footer">
+    <p>Valid until: <strong> Dec 2024</strong></p>
+    <a href="https://www.dominos.com/" class="apply-btn" target="_blank">Apply Coupon</a>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
