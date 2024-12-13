@@ -1,0 +1,228 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #333;
+}
+
+/* Website Name and Logo */
+.website-name {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.website-name img {
+    height: 80px;
+    margin-bottom: 10px;
+    float: left;
+    padding-left: 20px;
+} 
+
+.website-name .title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #050000;
+}
+
+/* Navigation bar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;     /*It determines which elements appear in front of or behind others when they overlap*/
+
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Style for navbar items */
+.navbar div {
+    padding: 14px 20px;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Active and hover state for navbar items */
+.navbar div.active, .navbar div:hover {
+    background-color: #ea7c7c;
+    color: white;
+}
+
+/* Image container styling */
+.app-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;        /*Flex items will wrap onto multiple lines, moving to the next line as needed*/
+    gap: 30px;
+    padding: 20px;      /*Adds space between the content and the border of an element*/
+}
+
+.app-section a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.app-section img {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    /*allows you to specify how certain properties of an element should change over time when a user interacts with it (e.g., on hover, focus, etc.)*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+}
+
+.app-section img:hover {
+    transform: scale(1.05);    /*resize an element slightly larger than its original size*/
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {    /* Specifies that the following styles should only apply under certain conditions*/
+    .app-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar div {
+        padding: 10px 15px;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    .app-section img {
+        height: 120px;
+        width: 120px;
+    }
+}
+
+/* Terms and Conditions */
+header {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+}
+
+footer a {
+    color: #ff6347; 
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #ffd700; /* A visually appealing hover color */
+}
+
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ea7c7c;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #d46060;
+}
+
+
+/*Rates and Reviews*/
+.stars {
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.stars .star {
+    font-size: 2rem;
+    color: #ccc; /* Default star color */
+    transition: color 0.3s;
+}
+
+.stars .star:hover,
+.stars .star:hover ~ .star {
+    color: #f0a500; /* Highlight stars on hover */
+}
+
+
+/*Scroll to top Button*/
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform:translateX(-50%);
+    background-color: #ea7c7c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#scrollToTopBtn:hover {
+    background-color: #c95a5a;
+}
+
+
+/*Dark Mode*/
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+button#darkModeToggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #ea7c7c;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+button#darkModeToggle:hover {
+    background-color: #c95a5a;
+}
+
+
+/*Progress Bar*/
+#progressBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 5px;
+    background-color: #ea7c7c;
+    z-index: 1000;
+}
+

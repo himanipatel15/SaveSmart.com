@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <style>
+        /* General page styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Main container for content */
+        .content-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Title */
+        h1 {
+            text-align: center;
+            color: #ea7c7c;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        /* Category Section */
+        .category-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .category-list li {
+            background-color: #ffffff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        /* Hover effect on list items */
+        .category-list li:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Subcategory (apps) */
+        .subcategory {
+            margin-left: 20px;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .subcategory li a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        .subcategory li a:hover {
+            color: #ea7c7c;
+        }
+
+        /* Category titles */
+        .category-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #ea7c7c;
+            margin-bottom: 10px;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .content-container {
+                padding: 0 10px;
+            }
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .category-title {
+                font-size: 1.2em;
+            }
+        }
+
+        /* Scrollbars */
+::-webkit-scrollbar {    /*allow styling different parts of the scrollbar*/
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {    /*argets the draggable thumb inside the scrollbar.*/
+    background-color: #ea7c7c;
+    border-radius: 5px;
+}
+
+
+/*used to style the scrollbar thumb (the draggable part) when a user hovers over it with their mouse*/
+::-webkit-scrollbar-thumb:hover {
+    background-color: #d46060;
+}
+
+</style>
+</head>
+<body>
+
+    <div class="content-container">
+        <h1>Explore Categories</h1>
+
+        <ul class="category-list">
+            <!-- Clothing Apps -->
+            <li>
+                <div class="category-title">Clothing Apps (Clothing, Electronics, etc.)</div>
+                <ul class="subcategory">
+                    <li><a href="Myntra Coupons.html">Myntra</a></li>
+                    <li><a href="Ajio Coupons.html">Ajio</a></li>
+                    <li><a href="Amazon Coupons.html">Amazon</a></li>
+                    <li><a href="Flipkart Coupons.html">Flipkart</a></li>
+                    <li><a href="Snapdeal Coupons.html">SnapDeal</a></li>
+                </ul>
+            </li>
+
+            <!-- Grocery Shopping Apps -->
+            <li>
+                <div class="category-title">Grocery Shopping Apps</div>
+                <ul class="subcategory">
+                    <li><a href="Zepto Coupons.html">Zepto</a></li>
+                    <li><a href="Blinkit Coupon.html">Blinkit</a></li>
+                    <li><a href="Amazon Pantry Coupon.html">Amazon Pantry</a></li>
+                    <li><a href="Jio mart Coupons.html">Jio Mart</a></li>
+                </ul>
+            </li>
+
+            <!-- Online Education Apps -->
+            <li>
+                <div class="category-title">Online Education Apps</div>
+                <ul class="subcategory">
+                    <li><a href="Udemy Coupons.html">Udemy</a></li>
+                    <li><a href="Coursera Coupons.html">Coursera</a></li>
+                    <li><a href="Byjus Coupons.html">Byjus</a></li>
+                    <li><a href="Toppr Coupons.html">Toppr</a></li>
+                </ul>
+            </li>
+
+            <!-- Food Delivery Apps -->
+            <li>
+                <div class="category-title">Food Delivery Apps</div>
+                <ul class="subcategory">
+                    <li><a href="Zomato Coupons.html">Zomato</a></li>
+                    <li><a href="Swiggy Coupons.html">Swiggy</a></li>
+                    <li><a href="Dunzo Coupons.html">Dunzo</a></li>
+                    <li><a href="Dominos Coupon.html">Domino's</a></li>
+                </ul>
+            </li>
+
+            <!-- Entertainment Apps -->
+            <li>
+                <div class="category-title">Entertainment Apps</div>
+                <ul class="subcategory">
+                    <li><a href="Disney+ Hotstar.html">Disney+ Hotstar</a></li>
+                    <li><a href="Sony Liv Coupon.html">SonyLiv</a></li>
+                    <li><a href="Zee5 Coupons.html">Zee5</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+/* MYNTRA COUPON 1 */
+
+/* Coupons row container */
+.coupons-row {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    justify-content: space-between; /* Adds spacing between coupons */
+    gap: 20px; /* Adds consistent spacing between coupons */
+    padding: 20px;
+  }
+  
+  /* Coupon styles */
+  .coupon {
+    flex: 1 1 calc(20% - 20px); /* Makes each coupon take up 20% of the row, minus gaps */
+    max-width: calc(20% - 20px);
+    border: 2px dashed #e2ce20;
+    border-radius: 10px;
+    background: #fffbe6;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .coupon-header {
+    background: #e2ce20;
+    color: white;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .coupon-header h2 {
+    margin: 0;
+    font-size: 22px;
+  }
+  
+  .coupon-header p {
+    margin: 5px 0 0;
+    font-size: 14px;
+  }
+  
+  .coupon-code {
+    padding: 15px;
+  }
+  
+  .coupon-code p {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .coupon-code h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #e2ce20;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .coupon-footer {
+    padding: 10px;
+    background: #f7f7f7;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .coupon-footer p {
+    margin: 5px 0;
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .apply-btn {
+    display: inline-block;
+    background-color: #e2ce20;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  .apply-btn:hover {
+    background-color: #e2ce20;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .coupon {
+      flex: 1 1 calc(50% - 20px); /* Two coupons per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .coupon {
+      flex: 1 1 100%; /* One coupon per row on small screens */
+    }
+  }
+  

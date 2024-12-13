@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy Coupons & Discounts</title>
+
+    <style>
+      /* Coupons row container */
+  .coupons-row {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    justify-content: space-between; /* Adds spacing between coupons */
+    gap: 20px; /* Adds consistent spacing between coupons */
+    padding: 20px;
+  }
+  
+  /* Coupon styles */
+  .coupon {
+    flex: 1 1 calc(20% - 20px); /* Makes each coupon take up 20% of the row, minus gaps */
+    max-width: calc(20% - 20px);
+    border: 2px dashed #f29d0b;
+    border-radius: 10px;
+    background: #fffbe6;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .coupon-header {
+    background:  #f29d0b;
+    color: white;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .coupon-header h2 {
+    margin: 0;
+    font-size: 22px;
+  }
+  
+  .coupon-header p {
+    margin: 5px 0 0;
+    font-size: 14px;
+  }
+  
+  .coupon-code {
+    padding: 15px;
+  }
+  
+  .coupon-code p {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .coupon-code h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #f29d0b;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .coupon-footer {
+    padding: 10px;
+    background: #f7f7f7;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .coupon-footer p {
+    margin: 5px 0;
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .apply-btn {
+    display: inline-block;
+    background-color:  #f29d0b;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  .apply-btn:hover {
+    background-color: #f29d0b;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .coupon {
+      flex: 1 1 calc(50% - 20px); /* Two coupons per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .coupon {
+      flex: 1 1 100%; /* One coupon per row on small screens */
+    }
+  }
+     </style>
+
+</head>
+<body>
+
+<!--1st Row-->
+<div class="coupons-row">
+  <div class="coupon">
+    <div class="coupon-header">
+      <h2>Flat ₹100 Off</h2>
+      <p>On orders above ₹299</p>
+    </div>
+    <div class="coupon-code">
+      <p>Use Code:</p>
+      <h3>BFBINGE</h3>
+    </div>
+    <div class="coupon-footer">
+      <p>Valid until: <strong>30 Nov 2024</strong></p>
+      <a href="https://www.swiggy.com/" class="apply-btn" target="_blank">Apply Coupon</a>
+    </div>
+  </div>
+
+
+  <div class="coupon">
+    <div class="coupon-header">
+      <h2>Flat ₹125 Off</h2>
+      <p>On orders above ₹199.</p>
+    </div>
+    <div class="coupon-code">
+      <p>Use Code:</p>
+      <h3>WELCOMEBACK125</h3>
+    </div>
+    <div class="coupon-footer">
+      <p>Valid until: <strong>30th Nov 2024</strong></p>
+      <a href="https://www.swiggy.com/" class="apply-btn" target="_blank">Apply Coupon</a>
+    </div>
+  </div>
+
+  <div class="coupon">
+    <div class="coupon-header">
+      <h2>Buy 1 Get 1 Free</h2>
+      <p> on select items like Paradise Biryani.</p>
+    </div>
+    <div class="coupon-code">
+      <p>Use Code:</p>
+      <h3> BOGO</h3>
+    </div>
+    <div class="coupon-footer">
+      <p>Valid until: <strong>Limited-time offer.</strong></p>
+      <a href="https://www.swiggy.com/" class="apply-btn" target="_blank">Apply Coupon</a>
+    </div>
+  </div>
+
+
+  <div class="coupon">
+    <div class="coupon-header">
+      <h2>Flat 50% Off + Extra Discounts</h2>
+      <p>on select items</p>
+    </div>
+    <div class="coupon-code">
+      <p>Use Code:</p>
+      <h3>XTRAPARTY</h3>
+    </div>
+    <div class="coupon-footer">
+      <p>Valid until: <strong>31st Dec 2024</strong></p>
+      <a href="https://www.swiggy.com/" class="apply-btn" target="_blank">Apply Coupon</a>
+    </div>
+  </div>
+
+<div class="coupon">
+  <div class="coupon-header">
+    <h2>Instamart Offer – Up to 50% Off</h2>
+    <p>Save on grocery items</p>
+  </div>
+  <div class="coupon-code">
+    <p>Use Code:</p>
+    <h3>No Code Required</h3>
+  </div>
+  <div class="coupon-footer">
+    <p>Valid until: <strong>Limited-time offer.</strong></p>
+    <a href="https://www.swiggy.com/" class="apply-btn" target="_blank">Apply Coupon</a>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
